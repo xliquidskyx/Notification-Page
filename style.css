@@ -8,7 +8,9 @@
 :root {
     --red: hsl(1, 90%, 64%);
     --blue: hsl(219, 85%, 26%);
-    --light-gray: hsl(219, 12%, 42%);
+    --light-blue: hsl(210, 60%, 98%);
+    --gray: hsl(219, 12%, 42%);
+    --light-gray: hsl(219, 14%, 63%);
 }
 
 #top-bar {
@@ -39,7 +41,7 @@
 }
 
 .mark-all-btn {
-    color: var(--light-gray);
+    color: var(--gray);
     font-size: small;
     align-self: flex-end;
 }
@@ -49,22 +51,29 @@
 }
 
 .notification {
-    color: var(--light-gray);
+    color: var(--gray);
     display: grid;
     grid-template-columns: 10vw 70vw;
+    row-gap: 1rem;
     justify-content: center;
     align-content: center;
     font-size: small;
     height: auto;
-    width: 100vw;
+    width: 85vw;
     text-align: justify;
     padding: 1.2em;
+    margin: 0 auto;
+}
+
+.notif-body {
+    padding: 0 1em;
 }
 
 .name {
     color: initial;
     display: inline-block;
     font-size: small;
+    font-weight: bolder;
 }
 
 .notif-msg {
@@ -77,9 +86,48 @@
 }
 
 .timestamp {
+    color: var(--light-gray);
     align-self: flex-start;
+    padding-top: 0.2em;
 }
 
+
+/*PERSONALIZED NOTIFICATION ATTRIBUTES*/
+
+.active {
+    background-color: var(--light-blue);
+    margin-top: 0.5em;
+}
+
+.post-name {
+    font-weight: bold;
+    padding-left: 0.3em;
+}
+
+.group-name {
+    color: var(--blue);
+    display: inline-block;
+    font-weight: bold;
+    padding-left: 0.3em;
+}
+
+.message-view {
+    border: 1px solid hsl(205, 33%, 90%);
+    grid-column: 2 / 4;
+    padding: 1em;
+    text-align: left;
+    margin-left: 0.8rem;
+    width: 65vw;
+}
+
+.notif-dot {
+    background-color: var(--red);
+    border-radius: 50%;
+    display: inline-block;
+    height: 0.6em;
+    width: 0.6em;
+    margin-left: 0.5em;
+}
 .attribution {
     font-size: 11px;
     text-align: center;
