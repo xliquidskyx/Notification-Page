@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans';
+}
+
+:root {
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+    --light-gray: hsl(219, 12%, 42%);
+}
+
+#top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.2em;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+}
+
+.notification-number {
+    background-color: var(--blue);
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    font-size:  small;
+    height: auto;
+    max-height: 1.7em;
+    width: 2.3em;
+    padding: 0.2em;
+    margin-left: 1em;
+    text-align: center;
+}
+
+.mark-all-btn {
+    color: var(--light-gray);
+    font-size: small;
+    align-self: flex-end;
+}
+
+.notification-container {
+    padding-top: 1em;
+}
+
+.notification {
+    color: var(--light-gray);
+    display: grid;
+    grid-template-columns: 10vw 70vw;
+    justify-content: center;
+    align-content: center;
+    font-size: small;
+    height: auto;
+    width: 100vw;
+    text-align: justify;
+    padding: 1.2em;
+}
+
+.name {
+    color: initial;
+    display: inline-block;
+    font-size: small;
+}
+
+.notif-msg {
+    display: inline-block;
+}
+
+.avatar, .picture {
+    height: auto;
+    width: 10vw;
+}
+
+.timestamp {
+    align-self: flex-start;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

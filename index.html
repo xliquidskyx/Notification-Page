@@ -8,44 +8,78 @@
   
   <title>Frontend Mentor | Notifications page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  Notifications 3
+  <div id="top-bar">
+    <h1 class="title">Notifications
+      <div class="notification-number">3</div>
+    </h1>
+    <div class="mark-all-btn">Mark all as read</div>
+  </div>
 
-  Mark all as read
-
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
-
-  Angela Gray followed you
-  5m ago
-
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
-
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
-
-  Kimberly Smith commented on your picture
-  1 week ago
-
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
-
-  Anna Kim left the group Chess Club
-  2 weeks ago
+  <div class="notification-container">
+    <div class="reaction notification active">
+      <img src="assets/images/avatar-mark-webber.webp" class="avatar">
+      <div class="notif-body">
+      <p class="notif-msg"><h2 class="name">Mark Webber</h2> reacted to your recent post <p class="post-name">My first tournament today!</p></p>
+      <p class="timestamp">1m ago</p>
+      </div>
+    </div>
+  
+    <div class="follow notification active">
+      <img src="assets/images/avatar-angela-gray.webp" class="avatar">
+      <div class="notif-body">
+        <p class="notif-msg"><h2 class="name">Angela Gray</h2> followed you</p>
+        <p class="timestamp">5m ago</p>
+      </div>
+    </div>
+  
+    <div class="group notification active">
+      <img src="assets/images/avatar-jacob-thompson.webp" class="avatar">
+      <div class="notif-body">
+        <p class="notif-msg"><h2 class="name">Jacob Thompson</h2> has joined your group <p class="group-name">Chess Club</p></p>
+        <p class="timestamp">1 day ago</p></div>
+    </div>
+  
+    <div class="private-msg notification">
+      <img src="assets/images/avatar-rizky-hasanuddin.webp" class="avatar">
+      <div class="notif-body">
+        <p class="notif-msg"><h2 class="name">Rizky Hasanuddin</h2> sent you a private message <p class="private-msg"> Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+          I'm already having lots of fun and improving my game.
+        </p></p>
+        <p class="timestamp">5 days ago</p></div>
+    </div>
+  
+    <div class="comment notification">
+      <img src="assets/images/avatar-kimberly-smith.webp" class="avatar">
+      <div class="notif-body">
+        <p class="notif-msg"> <h2 class="name">Kimberly Smith</h2>commented on your picture <img class="picture" src="assets/images/image-chess.webp"></p>
+        <p class="timestamp">1 week ago</p>
+      </div>
+    </div>
+  
+    <div class="reaction notification">
+      <img src="assets/images/avatar-nathan-peterson.webp" class="avatar">
+      <div class="notif-body">
+        <p class="notif-msg"><h2 class="name">Natan Peterson</h2> reacted to your recent post <p class="post-name">5 end-game strategies to increase your win rate</p></p>
+        <p class="timestamp">2 weeks ago</p>
+      </div>
+    </div>
+  
+    <div class="leave notification">
+      <img src="assets/images/avatar-anna-kim.webp" class="avatar">
+      <div class="notif-body">
+        <p class="notif-msg"><h2 class="name">Anna Kim</h2> left the group <p class="group-name">Chess Club</p></p>
+        <p class="timestamp">2 weeks ago</p>
+      </div>
+    </div>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Laura</a>.
   </div>
 </body>
 </html>
