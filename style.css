@@ -131,7 +131,7 @@
     width: 65vw;
 }
 
-.notif-dot {
+.active .notif-dot {
     background-color: var(--red);
     border-radius: 50%;
     display: inline-block;
