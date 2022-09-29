@@ -11,6 +11,7 @@
     --light-blue: hsl(210, 60%, 98%);
     --gray: hsl(219, 12%, 42%);
     --light-gray: hsl(219, 14%, 63%);
+    --light-grayish-blue: hsl(211, 68%, 94%);
 }
 
 #top-bar {
@@ -44,6 +45,7 @@
     color: var(--gray);
     font-size: small;
     align-self: flex-end;
+    text-decoration: none;
 }
 
 .notification-container {
@@ -83,6 +85,15 @@
 .avatar, .picture {
     height: auto;
     width: 10vw;
+}
+
+.comment .notif-msg { 
+    max-width: 50vw;
+}
+.picture {
+    position: absolute;
+    margin-top: -3rem;
+    margin-left: 13.5rem;
 }
 
 .timestamp {
@@ -131,8 +142,71 @@
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin-top: 3rem;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/*MEDIA QUERY*/
+
+@media screen and (min-width: 700px) {
+    .notif-body {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    html {
+        background-color: var(--light-grayish-blue);
+        padding-bottom: 2rem;
+    }
+    #container {
+        background-color: white;
+        height: auto;
+        width: 50vw;
+        margin: 0 auto;
+        margin-top: 4rem;
+        padding: 2em 0;
+    }
+
+    .title {
+        font-size: x-large;
+        padding-left: 1rem;
+    }
+
+    .notification-number {
+        font-size: medium;
+        max-height: 3.7em;
+        width: 2.3em;
+    }
+
+    .mark-all-btn {
+        font-size: 1em;
+        padding-right: 2rem;
+        
+    }
+    .notification {
+        height: auto;
+        width: 45vw;
+        margin-left: 2.5vw;
+    }
+    .avatar {
+        height: auto;
+        width: 4vw;
+        margin-left: 19vw;
+    }
+    .notif-body {
+        padding: 0 17em;
+        max-width: 60vw;
+    }
+    .message-view {
+        margin-left: 14vw;
+        width: 35vw;
+    }
+    .picture {
+        margin-left: 31.5vw;
+        width: 3vw;
+    }
 }
