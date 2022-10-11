@@ -46,6 +46,11 @@
     font-size: small;
     align-self: flex-end;
     text-decoration: none;
+    transition: 1s all;
+}
+
+.mark-all-btn:hover {
+    color: var(--blue);
 }
 
 .notification-container {
@@ -73,6 +78,7 @@
 
 .name {
     color: initial;
+    cursor: pointer;
     display: inline-block;
     font-size: small;
     font-weight: bolder;
@@ -107,16 +113,17 @@
 
 .active {
     background-color: var(--light-blue);
-    margin-top: 0.5em;
 }
 
 .post-name {
+    cursor: pointer;
     font-weight: bold;
     padding-left: 0.3em;
 }
 
 .group-name {
     color: var(--blue);
+    cursor: pointer;
     display: inline-block;
     font-weight: bold;
     padding-left: 0.3em;
