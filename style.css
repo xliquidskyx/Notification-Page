@@ -82,6 +82,7 @@
     display: inline-block;
     font-size: small;
     font-weight: bolder;
+    padding-right: 0.3em;
 }
 
 .notif-msg {

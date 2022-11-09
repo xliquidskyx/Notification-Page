@@ -1,12 +1,13 @@
 var activeNotifications = document.querySelectorAll('.active');
 var numberOfNotifications = activeNotifications.length;
-var allActiveNotifications = document.querySelectorAll('.notification.active');
 var redDot = document.querySelectorAll('.notif-dot');
 var allNotifications = document.querySelectorAll('.notification');
 var notificationNumber = document.querySelector(".notification-number");
 notificationNumber.innerHTML = numberOfNotifications;
 
 $('.mark-all-btn').click(function () {
+
+    var allActiveNotifications = document.querySelectorAll('.notification.active');
 
     if (numberOfNotifications != 0) {
         $('.mark-all-btn').text("Mark all as unread");  
@@ -21,8 +22,9 @@ $('.mark-all-btn').click(function () {
     } else {
         $('.mark-all-btn').text("Mark all as read");
         allNotifications.forEach(function (element) {
-            element.classList.add('active'); //todo make it work
+            element.classList.add('active');
             notificationNumber.innerHTML = allNotifications.length;
+            numberOfNotifications =  allNotifications.length;
         })
     }
 
